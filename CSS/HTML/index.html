@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Jersey Store Nepal</title>
+    <link href="https://fonts.googleapis.com/css2?
+    family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+   
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+   <style>
+   
+   
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     }
+     
+     
+     
+   body{
+     font-family: 'Poppins', sans-serif;
+     }
+   .navbar{
+       display: flex;
+       align-items: center;
+       padding: 20px;
+    } 
+    
+    
+   nav{
+       flex:1;
+       text-align: right;
+   }
+   
+   
+   nav ul{
+   display: inline-block;
+   list-style-type: none;
+   }
+   
+   
+   
+   nav ul li{
+   display: inline-block;
+   margin-right: 20px;
+   }
+   
+   a{
+     text-decoration: none;
+     color: #555;
+   }
+   
+   
+   
+   p{
+   color: #555;
+   }
+   
+   
+   
+   .container{
+      max-width: 1300px
+     margin: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+   }
+   
+   
+   .row{
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   }
+   
+   
+   
+   .col-2{
+   flex-basis: 50%;
+   min-width: 300px;
+   }
+   
+   
+   .col-2 img{
+   max-width: 100%;
+   padding: 50px 0;
+   }
+   
+   
+   .col-2 h1{
+   font-size: 50px;
+   line-height: 62px;
+   margin: 30px 0;
+   }
+   
+   
+   .btn{
+   display: inline-block;
+   background: black;
+   color: #fff;
+   padding: 8px 30px;
+   margin: 30px 0;
+   border-radius: 30px;
+   transition: background 0.2s;
+   }
+   
+   
+   .btn:hover{
+   background: #595B5B;
+   }
+   
+   
+   .header{
+   background: radial-gradient(#fff,#95ECDB)
+   }
+   
+   
+   .header .row{
+   margin-top: 70px;
+   }
+   
+   .categories{
+   margin: 70px 0;
+   }
+   
+   
+   .col-3{
+   flex-basis: 50%;
+   min-width: 250px;
+   margin-bottom: 30px;
+   }
+   
+   
+   .col-3 img{
+   width: 95%;
+   }
+   
+   
+    .small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    }
+
+   .col-4{
+   flex-basis: 25%;
+   padding: 10px;
+   min-width: 200px;
+   margin-bottom: 50px;
+   transition: transform 0.7s;	
+   }
+   
+   .col-4 img{
+   width: 100%;
+   }
+
+ 
+ 
+  .title{
+  text-align: center;
+  margin: 0 auto 80px;
+  position: relative;
+  line-height: 60px;
+  color: #555;
+  }
+
+   .title::after {
+   content: '';
+   background: #00E3D5;
+   width: 90px;
+   height: 5px;
+   border-radius: 5px;
+   position: absolute;
+   bottom: 0;
+   left: 50%;
+   transform: translateX(-50%);
+   display: block;	
+   }
+
+   h4{
+   color: #555;
+   font-weight: normal;
+   } 
+    
+   h4{
+   color: #555;
+   font-weight: normal;
+   } 
+   .col4{
+   font-size: 4px;
+   }
+   
+    .rating .fa{
+    color: #FFC300;
+    }
+    
+    .col-4:hover{
+    transform: translateY(-10px);
+    }
+    
+    
+    .col-5 img{
+    width: 100%;
+    height: 70px;
+    }
+    
+
+    
+    .footer{
+    background: #95ECDB;
+    color: #0360B3;
+    front-size: 14px;
+    Padding: 60px 0 20px;
+    margin-top: 60px;
+    }
+    
+    .footer p{
+    color: #000;
+    }
+    
+    .footer h3{
+    color: #000;
+    margin-bottom: 20px;
+    }
+    
+    .footer p{
+    color: #8a8a8a;
+    }
+    
+    .footer h3{	 
+    margin-bottom: 20px;
+    }
+    
+    .footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+    min-width: 250px;
+    margin-bottom: 20px;
+    }
+    
+    .footer-col-1{
+    flex-basis: 30%;
+    }
+    
+    .footer-col-2{
+    flex: 1;
+    text-align: center;
+    }
+    
+    .footer-col-2 img{
+    width: 180px;
+    margin-bottom: 20;
+    }
+    
+    .footer-col-3, .footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+    }
+    
+    ul{
+    list-style-type: none;
+    }
+    
+    .applogo{
+    margin-top: 20px;
+    }
+    
+    .applogo img{
+    width: 140px;
+    }
+    
+    .footer hr{
+    border: none;
+    background: #000;
+    height: 1px;
+    margin: 20px 0;
+    }
+    
+    .copyright{
+    text-align: center;
+    }
+    
+    
+   </style>
+</head>
+<body>
+
+<div class="header">
+<div class="container">
+<div class="navbar">
+       <div class="logo">	
+       <a href="mainpage.html"><img src="images/jersey_store.png" width="170px"></a>
+       </div>
+       <nav>
+       <ul>
+       <li><a href="mainpage.html"><u>Home</u></a></li>
+       <li><a href="products.html">Products</a></li>
+       <li><a href="about.html">About</a></li>
+       <li><a href="contact.html">Contact</a></li>
+       <li><a href="account.html">Gallery</a></li>
+       </ul>
+       </nav>
+       <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+   </div>
+   
+   <div class="row">
+     <div class="col-2">
+     <h1>Be Part Of The <br>Game!</h1>
+     <p> No matter the challenges ahead,
+      Never stop fighting for<br> New Jersey and
+     the values it share.</p>
+     <a href="" class="btn">Explore Now &#8658;</a>
+     </div>
+      <div class="col-2">
+     <img src="images/hoo.png">
+     </div>
+   </div>
+   
+ </div>
+</div>
+       
+       <!--------- featured categories section -------------->
+       
+       <div class="categories">
+       <div class="small-container">
+       <div class="row">
+               <div class="col-3">
+                   <img src="images/manu1.jpg" >
+                   </div>
+                   <div class="col-3">
+                   <img src="images/liv.webp">
+                   </div>
+                   <div class="col-3">
+                   <img src="images/napoli.jpg" height="450" width="300">
+                    </div>
+                   <div class="col-3">
+                   <img src="images/acmilan.jpg">
+                    </div>
+                   
+           </div>
+       </div>
+       </div>
+       
+       <center><video width="400" height="280" controls>
+ <source src="images/arsenal.mp4" type="video/mp4">
+ <source src="images/arsenal.mp4" type="video/mp4"><br>
+
+</video></center>
+       <p align="center">Our exclusive Arsenal Kit</p>
+       <br>
+       <br>
+       </center>
+                <!--------- featured products section -------------->
+           <div class="small-container">
+           <h2 class="title">Featured Products</h2>
+           <div class="row">
+           <div class="col-4">
+           <img src="images/vini.jpg">
+           <h4>Real Madrid Kit</h4>
+           <div class="rating">
+           <i class="fa fa-star" ></i>
+           <i class="fa fa-star" ></i>
+           <i class="fa fa-star" ></i>
+           <i class="fa fa-star" ></i>
+           <i class="fa fa-star" ></i>
+
+           </div>	
+           <p>$90.00</p>			
+          </div>
+          
+          <div class="col-4">
+           <img src="images/vene.jpg">
+           <h4>Venezia Kit</h4>
+           <div class="rating">
+           <i class="fa fa-star" ></i>
+           <i class="fa fa-star" ></i>
+           <i class="fa fa-star" ></i>
+           <i class="fa fa-star-o" ></i>
+           <i class="fa fa-star-o" ></i>
+           </div>	
+           <p>$60.00</p>			
+          </div>
+          
+          
+          <div class="col-4">
+           <img src="images/lewa.webp">
+           <h4>Barcalona Kit</h4>
+           <div class="rating">
+           <i class="fa fa-star" ></i>
+           <i class="fa fa-star" ></i>
+           <i class="fa fa-star" ></i>
+           <i class="fa fa-star-half-full "></i>
+           <i class="fa fa-star-o " ></i>
+
+           </div>	
+           <p>$70.00</p>			
+          </div>
+          
+          
+          <div class="col-4">
+           <img src="images/enzo.jpg">
+           <h4>Chelsea Kit</h4>
+           <div class="rating">
+           <i class="fa fa-star" ></i>
+           <i class="fa fa-star" ></i>
+           <i class="fa fa-star" ></i>
+           <i class="fa fa-star" ></i>
+           <i class="fa fa-star-half-full "></i>
+
+           </div>	
+           <p>$80.00</p>			
+          </div>
+          
+          
+       </div>
+
+
+       <!----latest products---------->
+       <h2 class="title">Latest Products</h2>
+       <div class="row">
+           <div class="col-4">
+           <a href="prod.html"><img src="images/img1.jpg"></a>
+           <h4>Nike XS-3</h4>
+           <div class="rating">
+           <i class="fa fa-star" ></i>
+           <i class="fa fa-star" ></i>
+           <i class="fa fa-star" ></i>
+           <i class="fa fa-star" ></i>
+           <i class="fa fa-star" ></i>
+
+           </div>	
+           <p>$90.00</p>			
+          </div>
+          
+          <div class="col-4">
+           <a href="prod.html"><img src="images/img2.jpg"></a>
+           <h4>Adidas Z-5</h4>
+           <div class="rating">
+           <i class="fa fa-star" ></i>
+           <i class="fa fa-star" ></i>
+           <i class="fa fa-star" ></i>
+           <i class="fa fa-star-o" ></i>
+           <i class="fa fa-star-o" ></i>
+           </div>	
+           <p>$60.00</p>			
+          </div>
+          
+          
+          <div class="col-4">
+           <a href="prod.html"><img src="images/img3.jpg"></a>
+           <h4>Adidas Z-4</h4>
+           <div class="rating">
+           <i class="fa fa-star" ></i>
+           <i class="fa fa-star" ></i>
+           <i class="fa fa-star" ></i>
+           <i class="fa fa-star-half-full "></i>
+           <i class="fa fa-star-o " ></i>
+
+           </div>	
+           <p>$70.00</p>			
+          </div>
+          
+          
+          <div class="col-4">
+           <a href="prod.html"><img src="images/img4.jpg"></a>
+           <h4>Adidas Z-3</h4>
+           <div class="rating">
+           <i class="fa fa-star" ></i>
+           <i class="fa fa-star" ></i>
+           <i class="fa fa-star" ></i>
+           <i class="fa fa-star" ></i>
+           <i class="fa fa-star-half-full "></i>
+
+           </div>	
+           <p>$65.00</p>			
+          </div>
+          
+          <div class="row">
+           <div class="col-4">
+           <a href="prod.html"><img src="images/img5.jpg"></a>
+           <h4>Nike Phantom R-9</h4>
+           <div class="rating">
+           <i class="fa fa-star" ></i>
+           <i class="fa fa-star" ></i>
+           <i class="fa fa-star" ></i>
+           <i class="fa fa-star" ></i>
+           <i class="fa fa-star" ></i>
+
+           </div>	
+           <p>$50.00</p>			
+          </div>
+          
+          <div class="col-4">
+           <a href="prod.html"><img src="images/img6.jpg"></a>
+           <h4>Nike Phantom R-8</h4>
+           <div class="rating">
+           <i class="fa fa-star" ></i>
+           <i class="fa fa-star" ></i>
+           <i class="fa fa-star" ></i>
+           <i class="fa fa-star-o" ></i>
+           <i class="fa fa-star-o" ></i>
+           </div>	
+           <p>$40.00</p>			
+          </div>
+          
+          
+          <div class="col-4">
+           <a href="prod.html"><img src="images/img7.jpg"></a>
+           <h4>Nike G-6</h4>
+           <div class="rating">
+           <i class="fa fa-star" ></i>
+           <i class="fa fa-star" ></i>
+           <i class="fa fa-star" ></i>
+           <i class="fa fa-star-half-full "></i>
+           <i class="fa fa-star-o " ></i>
+
+           </div>	
+           <p>$60.00</p>			
+          </div>
+          
+          
+          <div class="col-4">
+           <a href="prod.html"><img src="images/img8.jpg"></a>
+           <h4>Adidas Dark-Z </h4>
+           <div class="rating">
+           <i class="fa fa-star" ></i>
+           <i class="fa fa-star" ></i>
+           <i class="fa fa-star" ></i>
+           <i class="fa fa-star" ></i>
+           <i class="fa fa-star-half-full "></i>
+
+           </div>	
+           <p>$50.00</p>			
+          </div>
+          
+          
+       </div>
+          
+          
+          
+          <div class="row">
+           <div class="col-4">
+           <a href="prod.html"><img src="images/im1.jpg"></a>
+           <h4>Man United Away Kit 21/22</h4>
+           <div class="rating">
+           <i class="fa fa-star" ></i>
+           <i class="fa fa-star" ></i>
+           <i class="fa fa-star" ></i>
+           <i class="fa fa-star" ></i>
+           <i class="fa fa-star" ></i>
+
+           </div>	
+           <p>$70.00</p>			
+          </div>
+          
+          <div class="col-4">
+           <a href="prod.html"><img src="images/im2.jpeg"></a>
+           <h4>Arsenal Home KIt 21/22</h4>
+           <div class="rating">
+           <i class="fa fa-star" ></i>
+           <i class="fa fa-star" ></i>
+           <i class="fa fa-star" ></i>
+           <i class="fa fa-star-o" ></i>
+           <i class="fa fa-star-o" ></i>
+           </div>	
+           <p>$60.00</p>			
+          </div>
+          
+          
+          <div class="col-4">
+           <a href="prod.html"><img src="images/im3.jpeg"></a>
+           <h4>Liverpool Home 21/22</h4>
+           <div class="rating">
+           <i class="fa fa-star" ></i>
+           <i class="fa fa-star" ></i>
+           <i class="fa fa-star" ></i>
+           <i class="fa fa-star-half-full "></i>
+           <i class="fa fa-star-o " ></i>
+
+           </div>	
+           <p>$80.00</p>			
+          </div>
+          
+          
+          <div class="col-4">
+           <a href="prod.html"><img src="images/im4.jpeg"></a>
+           <h4>Tottenham Away 21/22  </h4>
+           <div class="rating">
+           <i class="fa fa-star" ></i>
+           <i class="fa fa-star" ></i>
+           <i class="fa fa-star" ></i>
+           <i class="fa fa-star" ></i>
+           <i class="fa fa-star-half-full "></i>
+
+           </div>	
+           <p>$50.00</p>			
+          </div>
+          
+          
+       </div>
+       </div>
+   </div>	
+
+        <!----- Brands  ------>
+       <div class="brands">
+       <div class="small-container">
+       <div class="row">
+       <div class="col-5">
+       <img src="images/cola.png">
+       </div>
+       <div class="col-5">
+       <img src="images/niee.png">
+       </div>
+       <div class="col-5">
+       <img src="images/addi.png">
+       </div>
+       <div class="col-5">
+       <img src="images/app.png">
+       </div>
+       <div class="col-5">
+       <img src="images/pum.png">
+       </div>
+       </div>
+       </div>
+       </div>
+        
+<!--------    footer   ------->
+<div class="footer">
+   <div class="container">
+         <div class="row">
+           <div class="footer-col-1">
+              <h3>Download Our App</h3>
+              <p>Download App for Android and ios mobile phone.  </p>
+              <div class="applogo">
+               <img src="images/appss.png">
+               <img src="images/gooas.png">
+               </div> 
+           </div>
+           <div class="footer-col-2">
+               <img src="images/jersey_store.png" > 
+               <p>The purpose of this online store is to provide the best quality products directly at your doors. </p>
+               
+           </div>
+           <div class="footer-col-3">
+           <h3>Useful Links</h3>
+            <ul>
+               <li>Coupons</li>
+               <li>Terms</li>
+               <li>Join Affiliate</li>
+               <li>Return Policy</li>
+               <li>Blog Post</li>
+           </ul>
+       </div>	
+           
+           
+           <div class="footer-col-4">
+           <h3>Follow Us</h3>
+            <ul>
+                <li><i class="fa-brands fa-github"></i><a href="https://github.com/Snehit77">Github</li></a>
+               <li>Facebook</li>
+               <li>Twitter</li>
+               <li>Instagram</li>
+               <li>Youtube</li>
+               <li>Reddit</li>
+           </ul>
+       </div>
+       </div>
+       
+       <hr>
+       <p class="copyright">Copyright 2023 - Snehit Parajuli</p>
+       
+       
+       </div>
+   </div>	
+
+
+
+
+
+
+</body> 
+</html>
